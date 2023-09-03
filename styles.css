@@ -1,0 +1,724 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul{
+    margin: 0;
+    list-style-type:none;
+}
+
+a{
+    font-size: large;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 5px;
+}
+
+.header{
+    padding: 20px;
+    height: calc(100vh - 40px);
+    background-image: url('https://defenders.org/sites/default/files/styles/meta_image/public/2023-07/2017.03.22%20-%20Expansive%20Forest%20-%20Nantahala%20National%20Forest%20-%20Blue%20Ridge%20Mountains%20-%20North%20Carolina%20-%20Bill%20Lea.jpg?itok=HiDuRqNl');
+    background-size: cover;
+    background-position: 70%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.header::after{
+    content: "";
+    background-color: aquamarine;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25 ease;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav{
+    position: absolute;
+    z-index: 2;
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list{
+display:flex;
+align-items: center;
+margin-left: auto;
+}
+
+.nav-list li a {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+.nav-list.panel{
+    position: relative;
+}
+
+.panel::after {
+    content: "";
+    background-color: #098377;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    transform: scale(0);
+    left: 0;
+    transition: all 0.3s ease;
+}
+.panel:hover::after {
+    transform: scale(1);
+}
+
+.panel-2:hover::after {
+    transform: scale(0);
+}
+
+.panel:hover{
+    color: #098377;
+}
+
+.logo-link{
+    display: flex;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.heart{
+    margin-right: 5px;
+}
+
+.donate{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size: 20px;
+    padding: 0 10px;
+    margin-right: 15px;
+    background-color: rgb(238, 0, 0);
+    border-radius: 3px;
+}
+.donate:hover{
+background-color:yellow;
+transition: fill 0.3s ease;
+color: blue;
+}
+
+
+.nav-list li:last-of-type a svg {
+    fill: white;
+    transition: fill 0.3s ease;
+}
+.nav-list li:last-of-type a:hover svg {
+    fill: blue; 
+}
+
+.burger-icon {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    vertical-align: -0.125em;
+    z-index: 1000;
+}
+
+.nav-list.active {
+    position: fixed; /* Фіксована панель для видимості на будь-якому місці сторінки */
+    top: 0; /* Розміщення зверху */
+    left: 0; /* Розміщення зліва */
+    width: 100%; /* Повна ширина вікна */
+    height: 100%; /* Повна висота вікна */
+    background-color: rgba(0, 0, 0, 0.8); /* Півпрозорий фон */
+    align-items: center; /* Вирівнювання по вертикалі по центру */
+    justify-content: center; /* Вирівнювання по горизонталі по центру */
+    transition: opacity 0.3s ease-in-out; /* Плавний ефект зміни видимості */
+    display: flex;
+    z-index: 1000;
+}
+
+.nav-toggle{
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.burger-icon{
+    padding-right: 15px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: "";
+    position: fixed;
+    background-color: transparent;
+    z-index: 1001;
+    width: 27%; /* Ширина риски */
+    height: 100%; /* Товщина риски */
+    top: 0; /* Розміщення від верхнього краю */
+    transition: all 0.3s ease; /* Плавний ефект зміни видимості */
+}
+
+.overlay::before {
+    left: 0; /* Розміщення від лівого краю */
+}
+
+.overlay::after {
+    right: 0; /* Розміщення від правого краю */
+}
+
+.overlay.active::before,
+.overlay.active::after {
+    width: 0%; /* Змінюємо ширину на 0, коли overlay активний */
+}
+
+.dropdown-menu.active {
+    display: block; /* Показувати меню, коли воно має клас "active" */
+}
+
+.main{
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin: auto 0;
+}
+
+.plast-container {
+    text-align: left;
+    width: 60%;
+}
+
+.plast-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    background-color: #098377;
+    border-radius: 3px;
+}
+
+.plast{
+    font-size: 55px;
+    color: white;
+}
+
+.plast1{
+    color: #098377;
+    line-height: 84px;
+}
+
+.right-container{
+    display: flex;
+    width: 40%;
+    margin-left: auto;
+}
+
+.photo-lileyka {
+    max-width: 100%;
+    margin: auto;
+    
+}
+
+.plast-target{
+    display: flex;
+    margin-top: 60px;
+    color: #098377;
+    font-size: 50px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.plast-target1{
+    font-size: 18px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.blocks-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%; 
+    margin: 40px auto;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    flex: 3;
+}
+
+.blocks-container h2{
+    color: #c40d42;
+}
+
+.horizontal-line::before {
+    margin-top: 80px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px; /* Товщина лінії */
+    background-color: #abb8c3; /* Колір лінії */
+}
+
+/* CSS для розділення екрану */
+.split-screen {
+    margin-top: 100px;
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    display: flex;
+    justify-content: center; /* Горизонтально центруємо вміст по осі X */
+    align-items: center;
+    flex: 1;
+    background-color: #f0f0f0; /* Колір фону для лівої частини */
+    overflow: hidden; /* Підгонка картинки до контейнера */
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.right h1 {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+.right h2 {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.sentenses {
+    height: 30%; /* 30% висоти батьківського блоку */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tru{
+    display: inline-block;
+    font-size: 32px;
+    color: #da251e;
+}
+
+.links {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Рівна відстань між дітьми */
+}
+
+.link-instagram{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.link-telegram{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.img-instagram{
+    height: 100px;
+    width: 100px;
+}
+
+.link-inst{
+    text-align: center;
+    border: 2px solid #9b3ab8;
+    padding: 2px 6px;
+    max-width: 98px;
+    background-color: #f3bfd5;
+    border-radius: 4px;
+}
+
+.link-instagram a {
+    color: #a92cbe;
+    font-weight: bold;
+}
+
+.link-tg{
+    text-align: center;
+    color: #2ba3d6;
+    border: 2px solid #2ba3d6;
+    max-width: 98px;
+    padding: 2px 9px 2px 8px;
+    background-color: #93deff;
+    border-radius: 4px;
+}
+
+
+.link-telegram a {
+    color: #2ba3d6;
+    font-weight: bold;
+}
+
+.img-facebook{
+    width: 100px; 
+    height: 100px; 
+}
+
+.link-facebook a {
+    color: rgb(59, 89, 152);
+    font-weight: bold;
+}
+
+.link-fb {
+    text-align: center;
+    max-width: 98px;
+    background-color: rgb(157, 172, 204);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(59, 89, 152);
+    border-image: initial;
+    padding: 2px 7px;
+    border-radius: 4px;
+}
+
+.link-facebook {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.img-telegram {
+    width: 100px; 
+    height: 100px; 
+}
+
+.link-gmail{
+    display: flex;
+    align-items: center;
+}
+
+.link-gm{
+    text-align: center;
+    color: #37a956;
+    border: 2px solid #ea4335;
+    padding: 2px 25px 2px 25px;
+    max-width: 98px;
+    background-color: #fde6a0;
+    border-radius: 4px;
+}
+
+.link-gmail a {
+    color: #37a956;
+    font-weight: bold;
+}
+
+.img-gmail{
+    height: 100px;
+    width: 100px;
+}
+
+.links > div {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.quote h3 {
+    font-size: 18px;
+    margin: 0;
+    text-align: left;
+}
+
+.quote span {
+    font-style: italic;
+    float: right; /* Додаємо float вправо для <span> */
+}
+
+
+
+.social-links {
+    margin-left: auto;
+}
+
+.social-link {
+    margin-left: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    fill: #333; /* Задайте колір, який вам потрібен */
+}
+
+.me {
+    display: flex;
+    align-items: center;
+}
+
+.me .mylogo {
+    margin-right: 10px; /* Додамо відступ між зображенням і текстом */
+}
+
+.mylogo img {
+    height: auto;
+}
+
+.mylogo-link {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.me .mylogo-link span {
+    margin-left: 10px; /* Додамо відступ між зображенням і текстом */
+}
+
+.dropdown-menu {
+    margin-left: 4px;
+    display: none;
+    position: absolute;
+    background-color: #46f8e6; /* Фон випливаючого меню */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Тінь для меню */
+    z-index: 2;
+    width: 111px; /* Задайте фіксовану ширину меню */
+    padding: 0;
+    border-radius: 10px;
+}
+
+/* Покажіть випливаюче меню, коли наводять на батьківський елемент */
+.has-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.instagram-icon {
+    padding-top: 5px;
+    max-height: 30px;
+    border-radius: 0%;
+    margin: 0;
+}
+
+.facebook-icon {
+    max-width: 84px;
+    max-height: 30px;
+    padding-bottom: 5px;
+    border-radius: 0%;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 992px)
+{
+.nav-toggle{
+    display: none;
+}
+}
+
+@media screen and (max-width: 992px)
+{
+.plast-link{
+    padding: 2px 32px;
+}
+
+.plast{
+    font-size: 48px;
+}
+
+.nav-list{
+    display: none;
+}
+
+.nav-list.active {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column; /* Відображення посилань вертикально */
+    align-items: center; /* Центрування вирівнювання по вертикалі */
+    text-align: center; /* Центрування тексту по горизонталі */
+    line-height: 1.5; /* Відстань між рядками для центрування тексту по вертикалі */
+    height: 100vh; /* Висота меню на весь екран */
+}
+
+.dropdown-menu {
+    width: 154px; /* Задайте фіксовану ширину меню */
+}
+
+.nav-list.active a {
+    font-size: 25px; /* Збільшити розмір шрифту для активного меню бургера */
+}
+
+.nav-list li {
+    display: block; /* Відображаємо пункти меню вертикально */
+    margin: 10px 0; /* Відстань між пунктами меню */
+}
+
+.blocks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.left{
+    display: none;
+}
+
+.links img {
+    height: 140px;
+    width: 140px;
+}
+
+.link-inst {
+    text-align: center;
+    max-width: 386px;
+    background-color: rgb(243, 191, 213);
+    margin-left: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(155, 58, 184);
+    border-image: initial;
+    padding: 2px 13px;
+    border-radius: 4px;
+}
+
+.links a {
+    font-size: 24px;
+}
+
+.links {
+    margin-top: 90px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-tg {
+    text-align: center;
+    max-width: 386px;
+    background-color: rgb(147, 222, 255);
+    margin-left: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(43, 163, 214);
+    border-image: initial;
+    padding: 2px 16px;
+    border-radius: 4px;
+}
+
+.link-fb {
+    text-align: center;
+    max-width: 386px;
+    background-color: rgb(157, 172, 204);
+    margin-left: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(59, 89, 152);
+    border-image: initial;
+    padding: 2px 14px;
+    border-radius: 4px;
+}
+
+.link-gm {
+    text-align: center;
+    color: rgb(55, 169, 86);
+    max-width: 180px;
+    background-color: rgb(253, 230, 160);
+    margin-left: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(234, 67, 53);
+    border-image: initial;
+    padding: 2px 37px;
+    border-radius: 4px;
+}
+
+footer {
+margin-top: 290px;
+}
+}

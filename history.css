@@ -1,0 +1,335 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('C:\\Users\\lesko\\OneDrive\\Робочий стіл\\Практика\\Taboru\\photos\\pexels-darius-krause-2254030.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    content: "";
+    background-color: aquamarine;
+    position: fixed;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease;
+    z-index: 0; /* Змінено значення z-index для роботи з іншими елементами */
+}
+
+.overlay-before,
+.overlay-after {
+    display: flex;
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    z-index: 1100;
+    width: 25%;
+    min-height: 90%;
+    min-width: 27%;
+    bottom: 0;
+    transition: all 0.3s ease;
+}
+
+.overlay.active {
+    opacity: 0.8;
+}
+
+    
+.overlay-before{
+    left: 0; /* Розміщення від лівого краю */
+    }
+    
+
+.overlay-after{
+    right: 0; /* Розміщення від правого краю */
+    }
+ul{
+    margin: 0;
+    list-style-type:none;
+}
+
+a{
+    font-size: large;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 5px;
+}
+
+.header{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav{
+    position: absolute;
+    z-index: 10;
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list{
+display:flex;
+align-items: center;
+margin-left: auto;
+}
+
+.nav-list li a {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.header .nav-list li .panel-6{
+    color: #098377;
+    position: relative;
+}
+
+.header .nav-list li .panel-6::after {
+    content: "";
+    background-color: #098377;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    transform: scale(1);
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.header .nav-list li:first-child a.panel-6:hover::after {
+    transform: scale(1);
+}
+
+.nav-list.panel{
+    position: relative;
+}
+
+.panel::after {
+    content: "";
+    background-color: #098377;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    transform: scale(0);
+    left: 0;
+    transition: all 0.3s ease;
+}
+.panel:hover::after {
+    transform: scale(1);
+}
+
+.panel-2:hover::after {
+    transform: scale(0);
+}
+
+.panel:hover{
+    color: #098377;
+}
+
+.logo-link{
+    display: flex;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.heart{
+    margin-right: 5px;
+}
+
+.donate{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size: 20px;
+    padding: 0 10px;
+    margin-right: 15px;
+    background-color: rgb(238, 0, 0);
+    border-radius: 3px;
+}
+.donate:hover{
+background-color:yellow;
+transition: fill 0.3s ease;
+color: blue;
+}
+
+
+.nav-list li:last-of-type a svg {
+    fill: white;
+    transition: fill 0.3s ease;
+}
+.nav-list li:last-of-type a:hover svg {
+    fill: blue; 
+}
+
+.burger-icon {
+    position: relative;
+    padding-right: 15px;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    vertical-align: -0.125em;
+    z-index: 10;
+}
+    
+.dropdown-menu.active {
+        display: block;
+    }
+
+.nav-list.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    z-index: 1;
+}
+
+.nav-toggle{
+        font-size: 2rem;
+        color: #fff;
+}
+
+.dropdown-menu {
+    margin-left: 4px;
+    display: none;
+    position: absolute;
+    background-color: #46f8e6;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 50;
+    width: 111px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    justify-content: center;
+}
+
+.instagram-icon {
+    padding-top: 5px;
+    max-height: 30px;
+    border-radius: 0%;
+    margin: 0;
+}
+
+.facebook-icon {
+    max-width: 84px;
+    max-height: 30px;
+    padding-bottom: 5px;
+    border-radius: 0%;
+}
+
+.info-container {
+    margin-top: 100px;
+    max-height: 80%;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.history {
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.history-img {
+    max-width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+}
+
+.Vygovtskogo-photo {
+    max-height: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+.history-content {
+    flex: 1;
+}
+
+.history-content h1{
+    margin-top: 0px;
+}
+
+.history-content h1, h3 {
+    text-align: center;
+}
+
+.text-bottom{
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+}
+@media screen and (min-width: 992px)
+{
+.nav-toggle{
+    display: none;
+}
+}
+
+@media screen and (max-width: 992px)
+{
+.nav-list{
+    display: none;
+    
+}
+.nav-list.active {
+    position: fixed;
+    z-index: 8;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    height: 100vh;
+}
+    
+.nav-list.active a {
+    font-size: 25px;
+}
+.nav-list li {
+    display: block;
+    margin: 10px 0;
+}
+
+.dropdown-menu {
+    width: 154px;
+}
+}
