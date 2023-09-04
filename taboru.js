@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const imagesPcWorld = [
-    "photos\IMG_0697.JPG",
-    "photos\IMG_9577.JPG",
-    "photos\IMG_9568.JPG"
+    "IMG_0697.JPG",
+    "IMG_9577.JPG",
+    "IMG_9568.JPG"
     // Додайте шляхи до інших фотографій тут
 ];
 
@@ -73,9 +73,9 @@ imgElementPcWorld.addEventListener('mouseleave', () => {
 
 // Для другого блоку
 const imagesMidgard = [
-    "photos\36510048_1873201342762873_2213546897916821504_n.jpg",
-    "photos\36587802_1873201539429520_5275951020545933312_n.jpg",
-    "photos\36884069_1888548787894795_8356117946795294720_n.jpg"
+    "36510048_1873201342762873_2213546897916821504_n.jpg",
+    "36587802_1873201539429520_5275951020545933312_n.jpg",
+    "36884069_1888548787894795_8356117946795294720_n.jpg"
 ];
 
 const imgElementMidgard = document.querySelector('.img-midgard');
@@ -112,9 +112,9 @@ imgElementMidgard.addEventListener('mouseleave', () => {
 });
 
 const imagesGentelman = [
-    "photos\65558417_2444086019007733_7695747161459261440_n.jpg",
-    "photos\66110176_2444086195674382_8528562717680730112_n.jpg",
-    "photos\66149811_2444084842341184_398670048509558784_n.jpg"
+    "65558417_2444086019007733_7695747161459261440_n.jpg",
+    "66110176_2444086195674382_8528562717680730112_n.jpg",
+    "66149811_2444084842341184_398670048509558784_n.jpg"
 ];
 
 const imgElementGentelman = document.querySelector('.img-gentelman');
