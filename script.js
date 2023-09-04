@@ -4,7 +4,7 @@ let contents = [
         imageSrc: "https://schtirlitz.ru/wp-content/uploads/kartinka-v-vk_1.jpg"
     },
     {
-        title: "Каблук Северин",
+        title: "Северин Яськів",
         title2: "Скарбник",
         text: "Це права половина вмісту. Тут може бути ваш текст, що описує праву половину."
     },
