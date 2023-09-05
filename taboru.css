@@ -389,12 +389,15 @@ color: blue;
 .left-column {
     position: relative;
 }
+    
+.prev-button {
+    left: 35%;
+    top: 0;
+}
 
-    .prev-button {
-        left: 10px;
-    }
-
-    .next-button {
-        right: 10px;
+.next-button {
+    right: 35%;
+    top: 0;
+}ght: 10px;
     }
 }
