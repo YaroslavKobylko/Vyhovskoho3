@@ -391,13 +391,16 @@ color: blue;
 }
     
 .prev-button {
-    left: 35%;
+    width: 40px; /* Фіксована ширина */
+    height: 40px; /* Фіксована висота */
+    left: 18%;
     top: 0;
 }
 
 .next-button {
-    right: 35%;
+    width: 40px; /* Фіксована ширина */
+    height: 40px; /* Фіксована висота */
+    right: 18%;
     top: 0;
-}ght: 10px;
-    }
+}
 }
