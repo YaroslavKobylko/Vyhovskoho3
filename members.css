@@ -290,7 +290,7 @@ color: blue;
 }
 
 .content-half img {
-    max-width: 100%;
+    max-width: 500px;
     max-height: 100%;
     border-radius: 50%;
 }
