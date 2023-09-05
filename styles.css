@@ -16,8 +16,7 @@ a{
 }
 
 .header{
-    padding: 20px;
-    height: calc(100vh - 40px);
+    height: 100vh;
     background-image: url('https://defenders.org/sites/default/files/styles/meta_image/public/2023-07/2017.03.22%20-%20Expansive%20Forest%20-%20Nantahala%20National%20Forest%20-%20Blue%20Ridge%20Mountains%20-%20North%20Carolina%20-%20Bill%20Lea.jpg?itok=HiDuRqNl');
     background-size: cover;
     background-position: 70%;
@@ -52,6 +51,7 @@ a{
 }
 
 .nav{
+    padding: 20px;
     position: absolute;
     z-index: 2;
     width: calc(100% - 40px);
@@ -204,6 +204,7 @@ color: blue;
 }
 
 .main{
+    padding-left: 20px;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
@@ -596,8 +597,8 @@ footer {
     padding: 2px 32px;
 }
 
-.plast{
-    font-size: 48px;
+.plastsize{
+    font-size: 36px;
 }
 
 .nav-list{
