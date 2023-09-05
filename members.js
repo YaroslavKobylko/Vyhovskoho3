@@ -40,7 +40,7 @@ let members = [
         info: "Інформація_1"
     },
     {
-        imageSrc: "https://schtirlitz.ru/wp-content/uploads/kartinka-v-vk_1.jpg",
+        imageSrc: "917e203c-fc85-4fc6-a185-9dfca0c52551.jpg",
         name: "Ярослав Кобилко",
         info: "Інформація_2"
     },
