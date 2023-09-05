@@ -35,12 +35,12 @@ let contentIndex = 0; // Визначаємо початковий індекс 
 
 let members = [
     {
-        imageSrc: "917e203c-fc85-4fc6-a185-9dfca0c52551.jpg",
+        imageSrc: "917e203c-fc85-4fc6-a185-9dfca0c52551.png",
         name: "Северин Яськів",
         info: "Інформація_1"
     },
     {
-        imageSrc: "917e203c-fc85-4fc6-a185-9dfca0c52551.jpg",
+        imageSrc: "msg724862758-188340.png",
         name: "Ярослав Кобилко",
         info: "Інформація_2"
     },
