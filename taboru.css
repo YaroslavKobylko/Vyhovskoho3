@@ -44,12 +44,12 @@ body{
 
     
 .overlay-before{
-    left: 0; /* Розміщення від лівого краю */
+    left: 0;
     }
     
 
 .overlay-after{
-    right: 0; /* Розміщення від правого краю */
+    right: 0;
     }
 ul{
     margin: 0;
@@ -391,15 +391,15 @@ color: blue;
 }
     
 .prev-button {
-    width: 40px; /* Фіксована ширина */
-    height: 40px; /* Фіксована висота */
+    width: 40px;
+    height: 40px;
     left: 18%;
     top: 0;
 }
 
 .next-button {
-    width: 40px; /* Фіксована ширина */
-    height: 40px; /* Фіксована висота */
+    width: 40px;
+    height: 40px;
     right: 18%;
     top: 0;
 }
