@@ -382,8 +382,8 @@ color: blue;
     max-width: 100%;
 }
 .prev-button, .next-button {
-    display: block;
-    opacity: 1;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .left-column {
@@ -391,16 +391,12 @@ color: blue;
 }
     
 .prev-button {
-    width: 40px;
-    height: 40px;
-    left: 18%;
+    left: 25%;
     top: 0;
 }
 
 .next-button {
-    width: 40px;
-    height: 40px;
-    right: 18%;
+    right: 25%;
     top: 0;
 }
 }
