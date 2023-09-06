@@ -332,4 +332,18 @@ color: blue;
 .dropdown-menu {
     width: 154px;
 }
+
+.history {
+    flex-direction: column; /* Змінено на column для малих екранів */
+    align-items: center; /* Вирівнюємо по центру для малих екранів */
+}
+
+.history-content {
+    text-align: center; /* Вирівнюємо текст по центру для малих екранів */
+}
+
+.history-img {
+    max-width: 100%; /* Змінюємо ширину на 100% для малих екранів */
+    justify-content: center; /* Вирівнюємо по центру для малих екранів */
+}
 }
