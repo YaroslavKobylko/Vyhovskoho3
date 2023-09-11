@@ -66,7 +66,7 @@ imgElementSvVesnu2023.addEventListener('mouseenter', () => {
     nextButtonSvVesnu2023.style.opacity = '0.5';
 });
 
-imgElementPcWorld.addEventListener('mouseleave', () => {
+imgElementSvVesnu2023.addEventListener('mouseleave', () => {
     prevButtonSvVesnu2023.style.opacity = '0';
     nextButtonSvVesnu2023.style.opacity = '0';
 });
