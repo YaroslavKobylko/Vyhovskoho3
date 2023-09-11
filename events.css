@@ -378,12 +378,12 @@ color: blue;
     }
     
     .prev-button {
-        left: 35%;
+        left: 30%;
         top: 0;
     }
     
     .next-button {
-        right: 35%;
+        right: 30%;
         top: 0;
     }
 }
