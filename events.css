@@ -280,7 +280,7 @@ color: blue;
 }
 
 .img-SvVesnu2023{
-    max-width: 88%;
+    max-width: 100%;
 }
 
 
@@ -367,14 +367,7 @@ color: blue;
     .img-SvVesnu2023{
         max-width: 100%;
     }
-    
-    .img-midgard{
-        max-width: 100%;
-    }
-    
-    .img-gentelman{
-        max-width: 100%;
-    }
+
     .prev-button, .next-button {
         display: block;
         opacity: 1;
