@@ -32,10 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const imagesSvVesnu2023 = [
-    "https://scontent.fiev19-1.fna.fbcdn.net/v/t39.30808-6/349797219_102338939555492_7630231614016217589_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=49d041&_nc_ohc=F5iTYPnJYc8AX8Ys2eL&_nc_ht=scontent.fiev19-1.fna&oh=00_AfCB0f2AzsXQzimxHHtQ6-4ck9RLDWre46UEbJw8lFAZ-w&oe=64F8333E",
-    "https://scontent.fiev19-1.fna.fbcdn.net/v/t39.30808-6/349673769_1416577912489363_1022524920593351762_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=49d041&_nc_ohc=_GQiKitV-scAX-jou6j&_nc_ht=scontent.fiev19-1.fna&oh=00_AfA7jTAB8UdIryWGE6f6VKvdePYVTjyUW_k1E-DwfCBAZA&oe=64F8CBCF",
-    "https://scontent.fiev19-1.fna.fbcdn.net/v/t39.30808-6/351332879_1214591155906383_4609552200984716964_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=49d041&_nc_ohc=KIFkbRT4lhcAX_yQepb&_nc_ht=scontent.fiev19-1.fna&oh=00_AfBiEut0qSjBilkWfl-OpCT5uqoqJUU6o1clE_Vzr9-JuQ&oe=64F8CEE6"
-    // Додайте шляхи до інших фотографій тут
+    "349797219_102338939555492_7630231614016217589_n",
+    "349673769_1416577912489363_1022524920593351762_n",
+    "351332879_1214591155906383_4609552200984716964_n"
 ];
 
 const imgElementSvVesnu2023 = document.querySelector('.img-SvVesnu2023');
