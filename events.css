@@ -363,10 +363,6 @@ color: blue;
     .split-container {
         flex-direction: column;
     }
-    
-    .img-SvVesnu2023{
-        max-width: 100%;
-    }
 
     .prev-button, .next-button {
         display: block;
